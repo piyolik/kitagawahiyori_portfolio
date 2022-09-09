@@ -1,0 +1,175 @@
+@use "setting" as s;
+@use "commonPC" as c;
+
+/*---------------------------------
+  テキストスタイル
+---------------------------------*/
+@mixin h1_PageTtl_sp {
+}
+@mixin h2_PageTtl_sp {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 200%;
+  /* or 26px */
+
+  letter-spacing: 0.04em;
+}
+@mixin h3_Heading_sp {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 250%;
+}
+@mixin h3_SecTtl_sp {
+}
+@mixin h4_ItemTtl_sp {
+}
+@mixin h4_NewsTtl_sp {
+}
+@mixin p_L-bold_sp {
+}
+@mixin p_L-Regular_sp {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 250%;
+}
+@mixin p_M-Bold_sp {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 200%;
+  /* or 22px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_M-Regular_sp {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 250%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.06em;
+}
+@mixin p_S-Bold_sp {
+  font-family: "A1 Gothic R";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 180%;
+  /* or 22px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_S-Regular_sp {
+  font-family: "A1 Gothic L";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 180%;
+  /* or 22px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_SS-Bold_sp {
+  font-family: "A1 Gothic R";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 250%;
+  /* or 25px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_SS-Regular_sp {
+  font-family: "A1 Gothic L";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 180%;
+  /* identical to box height, or 22px */
+
+  letter-spacing: 0.04em;
+}
+@mixin span_NavItem_L_sp {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 250%;
+  /* identical to box height, or 40px */
+
+  letter-spacing: 0.04em;
+}
+@mixin span_NavItem_sp {
+  font-family: "A1 Gothic R";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 30px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+}
+@mixin span_SecTtl_sp {
+}
+@mixin span_LinkBtn_sp {
+}
+
+/*---------------------------------
+  SP用 レイアウト 
+---------------------------------*/
+@include s.sp {
+  body {
+    @include s.max-width;
+
+    main {
+      overflow: hidden;
+      width: 100%;
+
+      .section {
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+
+        // 変更 ====================
+        display: flex;
+
+        flex-direction: column;
+
+        // SPには上下デフォルトで Padding 設定なし
+        padding: {
+          top: 0rem;
+          bottom: 0rem;
+        }
+        margin-bottom: 10rem;
+        // =======================
+        //
+        //
+        // このサイトだけ
+
+        // =======================
+        //
+        //
+        //
+        //
+        .inner {
+          @include s.inner-width;
+
+          width: unset;
+          height: 100%;
+          max-width: 100vw;
+
+          // =======================
+        }
+      }
+    }
+  }
+}

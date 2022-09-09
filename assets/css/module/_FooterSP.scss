@@ -1,0 +1,109 @@
+@use "../base/commonPC" as c;
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+// Footer  ロゴとナビが横並びにあるタイプのヘッダー　===========
+@include s.sp {
+  // 基本触らない！！！！===========
+  .FooterSP {
+    @include s.max-width;
+    width: 100%;
+    z-index: 100;
+
+    &__Inner {
+      @include s.inner-width;
+      height: 100%;
+
+      padding: 0 2%;
+      display: flex;
+    }
+
+    &__logo {
+      margin-right: 2rem;
+
+      a {
+        display: block;
+        padding: 1rem;
+        line-height: 4rem;
+      }
+    }
+
+    &__NavList {
+      display: flex;
+    }
+
+    &__nav {
+      display: flex;
+
+      // 高さを調整
+    }
+
+    &__nav-item {
+      box-sizing: border-box;
+      margin-right: 2rem;
+
+      a {
+        display: block;
+
+        // ① _nav-item の幅を調整
+        padding: 1rem;
+        width: 100%;
+
+        // ① _nav-item の高さを調整
+        line-height: 4rem;
+
+        text-align: center;
+      }
+    }
+  }
+
+  // こっちを編集！！！！===========
+  .FooterSP {
+    height: auto;
+
+    &__Inner {
+      // ② ロゴとナビのレイアウトを調整（ 縦並び or 横並び ）
+      flex-direction: column;
+      align-items: center;
+
+      // ③ 横並びの場合以下を調整（ 右寄せ or 左寄せ ） ----------------------
+      justify-content: space-between;
+      // --------------------------------------------
+    }
+
+    &__logo {
+      // ④ ロゴのサイズを変更ーーーーーーーーーーー
+      width: 22rem;
+    }
+
+    &__NavList {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__nav {
+      flex-direction: column;
+    }
+
+    &__nav-item {
+      // ⑤ _nav-item 間の距離ーーーーーーーーーーー
+      margin-right: 2rem;
+
+      a {
+        // ⑥ _nav-item の幅を調整
+        padding: 1rem;
+
+        // ⑦ _nav-item の高さを調整
+        line-height: 4rem;
+
+        span {
+          // ⑧ _commonPC.scss で fontを編集
+          @include sp.span_NavItem_sp;
+        }
+      }
+    }
+    &__CopyRight {
+      @include sp.p_SS-Regular_sp;
+    }
+  }
+}

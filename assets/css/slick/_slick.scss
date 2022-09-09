@@ -1,0 +1,102 @@
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+.slider {
+  width: 80%;
+  /* ①スライダー全体の幅を指定 */
+  margin: 0 auto;
+
+  position: relative;
+  z-index: 1;
+  height: auto;
+
+  .slider-item {
+    overflow: visible;
+    width: 100%;
+    /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height: auto;
+  }
+}
+
+/*矢印の設定*/
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  z-index: 3;
+  top: 46%;
+
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+
+  /*矢印の色*/
+
+  //   矢印の大きさを指定
+  height: 8%;
+  width: 8%;
+  img {
+    width: 100%;
+  }
+
+  @include s.sp {
+    top: 36.5rem;
+    width: 4rem;
+  }
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -12%;
+  @include s.sp {
+    left: 15%;
+  }
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -12%;
+  @include s.sp {
+    right: 15%;
+  }
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  margin: 2.3rem 0 0 0;
+  @include s.sp {
+    margin: 0;
+    top: -3rem;
+  }
+  /*ドットの位置*/
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: rgb(177, 177, 177);
+  /*ドットボタンの色*/
+  border: none;
+  padding: 2px;
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}

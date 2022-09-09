@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.form--Round--Msize {
+  label {
+    font-family: $Inter;
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+  input {
+    box-sizing: border-box;
+    width: 30rem;
+    height: 4.5rem;
+    padding-left: 6rem;
+    border-radius: 1.3rem;
+    border: 0.13rem solid $__purple;
+  }
+}
+
+.submit--Round--Ssize {
+  min-width: 8rem;
+  padding: 0rem 2rem;
+  width: auto;
+  height: 3.6rem;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  box-shadow: unset;
+  filter: drop-shadow(4px 4px 45px rgba(0, 0, 0, 0.15));
+
+  background: $__purple;
+}

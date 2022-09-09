@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/*---------------------------------
+  SP と PC のブレイクポイントを指定
+---------------------------------*/
+
+$sp-breakpoints: 1024px;
+
+@mixin sp {
+  @media (max-width: $sp-breakpoints) {
+    @content;
+  }
+}
+
+/*-------------------------------------
+  レスポンシブにサイズを可変させる魔法の計算式
+--------------------------------------*/
+
+// 基準となる画面サイズ
+$pc-design-size: 1728;
+$sp-design-size: 360;
+
+@function vw($viewport) {
+  $rate: (10 / $viewport);
+  @return ($rate * 100) + vw;
+}
+/*
+      関数名：vw
+      引数名：＄viewport
+      計算式：10 / 基準画面幅（ $pc-design-size もしくは $sp-design-size ）* 100 
+      
+    */
+
+html {
+  font-size: vw($pc-design-size);
+
+  @include sp {
+    font-size: vw($sp-design-size);
+  }
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/*---------------------------------
+  表示・非表示に設定
+---------------------------------*/
+
+.pc {
+  display: block !important;
+  @include sp {
+    display: none !important;
+  }
+}
+
+.sp {
+  display: none !important;
+  @include sp {
+    display: block !important;
+  }
+}
+
+/*---------------------------------
+  @mixin 画面幅
+---------------------------------*/
+
+// レスポンシブデザインのための最大幅設定
+@mixin max-width {
+  max-width: 160rem;
+  width: 124rem;
+  margin: 0 auto;
+  overflow-y: scroll;
+
+  @include sp {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@mixin main-width {
+  width: 70%;
+  margin: 0 auto;
+  @include sp {
+    max-width: 100vw;
+    width: 100%;
+  }
+}
+
+// インナー幅
+@mixin inner-width {
+  width: 80%;
+  margin: 0 auto;
+  @include sp {
+    width: 80%;
+    overflow-x: hidden;
+  }
+}
+
+@mixin contents-width {
+  max-width: 82rem;
+  margin: 0 auto;
+  @include sp {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+// effects

@@ -1,0 +1,137 @@
+@use "../base/commonPC" as c;
+@use "../base/setting" as s;
+
+.HeaderPC {
+  @include s.max-width;
+  width: 30%;
+  // ① Header の幅を調整
+
+  height: 100vh;
+  // ① Header の高さを調整
+
+  position: relative;
+  right: 0;
+  z-index: 100;
+  // 位置を調整
+
+  border-left: 0.1rem solid black;
+  // 装飾
+
+  &__Inner {
+    height: 100%;
+
+    padding-top: 3rem;
+    padding-left: 7rem;
+    display: flex;
+    // ② ロゴとナビのレイアウトを調整（ 縦並び or 横並び ）
+    flex-direction: column;
+    align-items: flex-start;
+
+    // ③ 横並びの場合以下を調整（ 右寄せ or 左寄せ ） ----------------------
+    justify-content: flex-start;
+    // --------------------------------------------
+  }
+
+  &__title {
+    display: flex;
+    height: 10%;
+    flex-direction: column;
+    margin-bottom: 3rem;
+
+    &__title-copy {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        margin: 0 0 0 1rem;
+
+        @include c.p_L-Regular_pc;
+      }
+    }
+    &__logo {
+      margin-right: 2rem;
+      width: 5rem;
+      margin-right: 1rem;
+
+      a {
+        display: block;
+        padding: 0rem;
+        line-height: 4rem;
+      }
+    }
+
+    p {
+      @include c.p_M-Regular_pc;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+
+    // 高さを調整
+  }
+
+  &__nav-item {
+    box-sizing: border-box;
+    margin-right: 2rem;
+
+    a {
+      display: block;
+
+      // ① _nav-item の幅を調整
+      padding: 1rem;
+      width: 100%;
+
+      // ① _nav-item の高さを調整
+      line-height: 2rem;
+
+      text-align: left;
+      span {
+        // ⑧ _commonPC.scss で fontを編集
+        @include c.span_NavItem_L_pc;
+      }
+    }
+  }
+  &__Work-nav {
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: start;
+      a {
+        span {
+          @include c.span_NavItem_pc;
+          line-height: 1rem;
+        }
+      }
+      .bar {
+        width: 1.6rem;
+        height: 0.1rem;
+        background-color: black;
+        margin-right: 1.6rem;
+      }
+    }
+  }
+  &__Contact-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    li {
+      width: 5rem;
+      margin-right: 2rem;
+      a {
+        padding: 0;
+        span {
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+}

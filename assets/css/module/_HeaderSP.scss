@@ -1,0 +1,199 @@
+@use "../base/commonPC" as c;
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+.SPHeader {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+
+  // ①　ハンバーガーメニューの縦の位置を調整
+
+  // ----------------------------------
+
+  &__Inner {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*========= Open ボタンのためのCSS ===============*/
+
+  &__openbtn {
+    position: fixed;
+    right: 10%;
+    top: 4rem;
+    z-index: 9999;
+
+    .humbarger {
+      // サークル型のオープンボタンの時ーーーーーーーー
+      // border: 1px solid #fff;
+      // border-radius: 50%;
+      // ーーーーーーーーーーーーーーー
+
+      position: absolute;
+      right: 0rem;
+      top: 0rem;
+      display: block;
+      z-index: 9999;
+      width: 5rem;
+      height: 5rem;
+
+      // 画像を挿入する時ーーーーーーーーーーーー
+      background-image: url(../img/hiyori.GIF);
+      background-size: 100%;
+      // ーーーーーーーーーーーーーーーーーーーー
+    }
+
+    &.active .humbarger {
+      background-image: none;
+      border: 0.2rem solid c.$main-color;
+      border-radius: 50%;
+    }
+
+    // 画像を挿入するときーーーーーーーーーーーーーーー
+    p {
+      @include sp.p_SS-Bold_sp;
+      font-family: "Hiragino Kaku Gothic Pro";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 3;
+      color: c.$main-color;
+    }
+    &.active p {
+      opacity: 0;
+    }
+    // -------------------------
+
+    span {
+      width: 19px;
+      height: 2px;
+      background: c.$main-color;
+      display: block;
+      position: absolute;
+      top: 2.4rem;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 9999;
+      transition: 0.2s;
+      &.opacity0 {
+        opacity: 0;
+      }
+    }
+
+    span.first {
+      top: 1.9rem;
+    }
+    &.active span.first {
+      opacity: 1;
+      transform: rotate(-45deg);
+      top: 2.3rem;
+      width: 2.5rem;
+      transition: 0.3s cubic-bezier(0.56, 1, 0.86, 1.39);
+    }
+    &.active span.second {
+      opacity: 0;
+
+      transition: 0.2s;
+    }
+    span.third {
+      top: 2.9rem;
+      width: 1.4rem;
+      margin-left: 1.1rem;
+    }
+    &.active span.third {
+      opacity: 1;
+      width: 2.5rem;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 2.3rem;
+      transition: 0.3s cubic-bezier(0.56, 1, 0.86, 1.39);
+    }
+  }
+
+  /*========= HedderSP Nav のためのCSS ===============*/
+
+  &__nav {
+    /*ナビゲーション天地中央揃え*/
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* ④ リストアイテムのレイアウト設定*/
+    li {
+      list-style: none;
+      text-align: center;
+      padding: {
+        top: 0rem;
+        bottom: 0rem;
+      }
+      // ⑤ リストアイテムのデザイン設定*/
+      a {
+        color: c.$main-color;
+        text-decoration: none;
+        padding: 0.5rem;
+        text-align: left;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-family: c.$Roboto;
+        font-weight: 400;
+        font-size: 1.6rem;
+        span {
+          @include sp.span_NavItem_L_sp;
+        }
+      }
+    }
+  }
+
+  &__Work-nav {
+    width: min-content;
+    padding-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .bar {
+        width: 1.6rem;
+        height: 0.1rem;
+        background-color: black;
+        margin-right: 1.6rem;
+      }
+      a {
+        span {
+          @include sp.span_NavItem_sp;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  &__Contact-nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    li {
+      width: 5rem;
+      margin-right: 2rem;
+      a {
+        padding: 0;
+        span {
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.midnightHeader.default h1 {
+  color: #fff;
+}

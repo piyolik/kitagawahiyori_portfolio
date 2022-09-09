@@ -1,0 +1,52 @@
+@use "../base/commonPC" as c;
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+// ハンバーガーバーがクリックされる前、G-nav が close のとき
+#g-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+
+  left: -120%;
+
+  // ① ナビの幅・高さ・背景色・位置を変更したい場合は調整
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 0rem 0;
+  background: rgb(255, 255, 255);
+  // ---------------------------------------
+
+  transition: all 0.6s; /*動き*/
+}
+
+// ハンバーガーバーがクリックされて、G-nav が Open の時
+#g-nav.panelactive {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+
+  left: 0; // これによって Open
+
+  // ② ①と揃える
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 0rem 0;
+  background: rgb(255, 255, 255);
+  // ーーーーーーーーーーーーーーーーーーーー
+  transition: all 0.6s; /*動き*/
+}
+//
+//
+//
+// ③ ナビゲーションのレイアウトを調整
+#g-nav.panelactive #g-nav-list {
+  overflow: auto; /*ナビの数が増えた場合縦スクロール*/
+
+  /*ナビのリスとを縦中央揃え*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 4rem;
+}
+

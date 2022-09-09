@@ -1,0 +1,35 @@
+@use "../base/commonPC" as c;
+@use "../base/setting" as s;
+main.Works {
+  @include s.main-width;
+
+  .WorksList {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 45%;
+      margin-bottom: 3rem;
+      &:nth-child(odd) {
+        margin-right: 5%;
+      }
+      &:nth-child(even) {
+        margin-left: 5%;
+      }
+
+      p {
+        margin-top: 3rem;
+        text-align: center;
+        @include c.p_M-Regular_pc;
+
+        // はみ出る場合は・・・
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use "../base/commonPC" as c;
+@use "../base/setting" as s;
+
+// ハンバーガーバーがクリックされる前、G-nav が close のとき
+#g-nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+
+  left: -120%;
+
+  // ① ナビの幅・高さ・背景色・位置を変更したい場合は調整
+  width: 50%;
+  height: 100vh;
+  padding: 10rem 3rem 0;
+  background: rgb(255, 255, 255);
+  // ---------------------------------------
+
+  transition: all 0.6s; /*動き*/
+}
+
+// ハンバーガーバーがクリックされて、G-nav が Open の時
+#g-nav.panelactive {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+
+  left: 0; // これによって Open
+
+  // ② ①と揃える
+  width: 50%;
+  height: 100vh;
+  padding: 10rem 3rem 0;
+  background: rgb(255, 255, 255);
+  // ーーーーーーーーーーーーーーーーーーーー
+  transition: all 0.6s; /*動き*/
+}
+//
+//
+//
+// ③ ナビゲーションのレイアウトを調整
+#g-nav.panelactive #g-nav-list {
+  overflow: auto; /*ナビの数が増えた場合縦スクロール*/
+
+  /*ナビのリスとを縦中央揃え*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+/* ④ リストアイテムのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  text-align: center;
+  padding: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+  border: {
+    bottom: 0.1rem solid rgb(197, 197, 197);
+  }
+}
+// ⑤ リストアイテムのデザイン設定*/
+#g-nav li a {
+  color: c.$main-color;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: c.$Roboto;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+// ⑥ ロゴとか、見出しとかの設定
+.g-nav__heading {
+  width: 50%;
+  margin: {
+    top: 5vh;
+  }
+}

@@ -1,0 +1,79 @@
+@use "../base/commonSP" as sp;
+@use "../base/commonPC" as c;
+@use "../base/setting" as s;
+
+@include s.sp {
+  main.About {
+    @include s.main-width;
+
+    .Title {
+      //   ここから編集
+      border-bottom: 1px solid c.$main-color;
+      height: min-content;
+      padding-bottom: 4rem;
+
+      &__Inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      &__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 4rem;
+        p:nth-child(1) {
+          @include sp.p_L-Regular_sp;
+        }
+        p:nth-child(2) {
+          @include sp.p_M-Regular_sp;
+          position: relative;
+          right: 0.5rem;
+          white-space: nowrap;
+        }
+      }
+      &__img {
+        width: 13rem;
+        margin-right: 2.1rem;
+      }
+
+      &__theme {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__copy {
+        p {
+          @include sp.p_M-Regular_sp;
+        }
+      }
+    }
+
+    .About {
+      height: 140rem;
+      padding-top: 5rem;
+      .AboutTable {
+        width: 100%;
+        tr {
+          td {
+            height: min-content;
+            @include sp.p_S-Regular_sp;
+            font-size: 1.15rem;
+
+            &:nth-child(1) {
+              width: 20%;
+            }
+            a {
+              span {
+                color: rgb(0, 176, 199);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

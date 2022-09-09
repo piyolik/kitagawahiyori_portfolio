@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+// base
+@use "./base/commonPC";
+@use "./base/commonSP";
+@use "./base/reset";
+@use "./base/setting";
+
+// plugin
+@use "./slick/slick";
+
+// module
+@use "./module/G-navSP";
+@use "./module/HeaderSP";
+@use "./module/HeaderPC";
+
+@use "./module/Footer";
+@use "./module/FooterSP";
+
+// page
+
+@use "./page/Top";
+@use "./page/TopSP";
+@use "./page/About";
+@use "./page/AboutSP";
+@use "./page/Works";
+@use "./page/WorksSP";
+@use "./page/Work";
+@use "./page/WorkSP";
+// 下にあるファイルによって上書きされる

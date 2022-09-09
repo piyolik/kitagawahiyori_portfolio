@@ -1,0 +1,188 @@
+@use "setting" as s;
+
+/*---------------------------------
+  color
+---------------------------------*/
+
+$main-color: rgb(37, 37, 37);
+$text-color: rgba(0, 0, 0, 1);
+$section-color: rgba(0, 0, 0, 0);
+
+/*---------------------------------
+  font
+---------------------------------*/
+
+// Roboto
+
+$Roboto: "Roboto", sans-serif;
+
+// ヒラギノ角ゴ
+
+$Hiragino__KG--W3: "Hiragino Kaku Gothic W3 JIS2004";
+$Hiragino__KG--W4: "Hiragino Kaku Gothic W4 JIS2004";
+$Hiragino__KG--W6: "Hiragino Kaku Gothic W6 JIS2004";
+
+/*---------------------------------
+  テキストスタイル
+---------------------------------*/
+@mixin h1_PageTtl_pc {
+}
+@mixin h2_PageTtl_pc {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 2.4rem;
+  line-height: 250%;
+}
+@mixin h3_Heading_pc {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+  letter-spacing: 0.04em;
+  font-size: 2rem;
+  line-height: 0%;
+}
+@mixin h3_SecTtl_pc {
+}
+@mixin h4_ItemTtl_pc {
+}
+@mixin h4_NewsTtl_pc {
+}
+@mixin p_L-bold_pc {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 250%;
+}
+@mixin p_L-Regular_pc {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+
+  font-size: 1.8rem;
+  line-height: 250%;
+}
+@mixin p_M-Bold_pc {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+
+  font-size: 1.6rem;
+  line-height: 250%;
+  /* or 40px */
+
+  letter-spacing: 0.1em;
+}
+@mixin p_M-Regular_pc {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+
+  font-size: 1.6rem;
+  line-height: 200%;
+  /* identical to box height, or 32px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_S-Bold_pc {
+  font-family: "A1 Gothic R";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 200%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_S-Regular_pc {
+  font-family: "A1 Gothic L";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 200%;
+  /* identical to box height, or 28px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_SS-Bold_pc {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 250%;
+  /* or 30px */
+
+  letter-spacing: 0.04em;
+}
+@mixin p_SS-Regular_pc {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 180%;
+  /* identical to box height, or 22px */
+
+  letter-spacing: 0.04em;
+}
+
+@mixin span_NavItem_L_pc {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+
+  /* identical to box height, or 40px */
+
+  letter-spacing: 0.04em;
+}
+@mixin span_NavItem_pc {
+  font-family: "Shuei MaruGo L";
+  font-style: normal;
+
+  font-size: 1.4rem;
+}
+
+@mixin span_SecTtl_pc {
+}
+@mixin span_LinkBtn_pc {
+}
+
+/*---------------------------------
+  PC用 レイアウト 
+---------------------------------*/
+
+* {
+  background-color: $section-color;
+}
+body {
+  width: 100%; /*ページ全体の幅は100%と指定する*/
+  text-align: left; /*ページ全体を中央揃えにする*/
+
+  display: flex; /*ページ全体のレイアウト*/
+  flex-direction: row-reverse;
+  @include s.max-width;
+
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu　Gothic", "Meiryo", sans-serif;
+
+  main {
+    @include s.main-width;
+
+    section {
+      @include s.inner-width;
+
+      margin: {
+        bottom: 1rem;
+      }
+      height: 80rem;
+      position: relative;
+
+      // 変更 ====================
+      display: flex;
+      flex-direction: row;
+      // PC用には上下デフォルトで Padding 設定あり
+      padding: {
+        top: 10rem;
+        bottom: 10rem;
+      }
+    }
+  }
+}

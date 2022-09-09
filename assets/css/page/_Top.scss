@@ -1,0 +1,45 @@
+@use "../base/commonPC" as c;
+@use "../base/setting" as s;
+main.Top {
+  @include s.main-width;
+
+  .Title {
+    //   ここから編集
+    border-bottom: 1px solid black;
+    height: min-content;
+
+    &__Inner {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__copy {
+      p {
+        @include c.p_L-Regular_pc;
+      }
+    }
+
+    &__img {
+      width: 24rem;
+    }
+  }
+
+  .Slider {
+    &__Inner {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      overflow: visible;
+      p {
+        @include c.p_M-Regular_pc;
+        margin-bottom: 5.7rem;
+      }
+      &__img {
+      }
+    }
+  }
+}

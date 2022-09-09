@@ -1,0 +1,41 @@
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+@include s.sp {
+  main.Works {
+    @include s.main-width;
+
+    .WorksList {
+      width: 100%;
+      &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: none;
+      }
+      &__item {
+        width: 100%;
+        margin-bottom: 3rem;
+        &:nth-child(odd) {
+          margin-right: 0%;
+        }
+        &:nth-child(even) {
+          margin-left: 0%;
+        }
+
+        p {
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 3rem;
+          text-align: center;
+          @include sp.p_M-Regular_sp;
+
+          // はみ出る場合は・・・
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+      }
+    }
+  }
+}
