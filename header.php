@@ -19,10 +19,6 @@
 
 
     <link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/css/theme.css">
-    
-    
-
-    <title>TOP</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <script type="text/javascript"
