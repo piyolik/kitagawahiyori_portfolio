@@ -320,6 +320,7 @@ html ul {
 /*矢印の設定*/
 .slick-prev,
 .slick-next {
+  display: none;
   position: absolute;
   z-index: 3;
   top: 46%;
@@ -338,6 +339,7 @@ html ul {
 @media (max-width: 1024px) {
   .slick-prev,
 .slick-next {
+    display: block !important;
     top: 36.5rem;
     width: 4rem;
   }
@@ -365,6 +367,7 @@ html ul {
 
 /*ドットナビゲーションの設定*/
 .slick-dots {
+  display: none !important;
   position: relative;
   z-index: 3;
   text-align: center;
@@ -373,6 +376,7 @@ html ul {
 }
 @media (max-width: 1024px) {
   .slick-dots {
+    display: block !important;
     margin: 0;
     top: -3rem;
   }
