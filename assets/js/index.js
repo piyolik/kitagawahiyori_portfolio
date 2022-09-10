@@ -25,8 +25,8 @@ $('.slider').slick({
 		slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せる
 		arrows: true,//左右の矢印あり
 
-		prevArrow: '<div class="slick-prev slick-arrow"><img src="http://piyofolio.local/wp-content/themes/portfolio/assets/img/prev-arrow.svg" alt=""></div>',//矢印部分PreviewのHTMLを変更
-		nextArrow: '<div class="slick-next slick-arrow"><img src="http://piyofolio.local/wp-content/themes/portfolio/assets/img/next-arrow.svg" alt=""></div>',//矢印部分NextのHTMLを変更
+		prevArrow: '<div class="slick-prev slick-arrow"><img src="https://piyofolio.sakura.ne.jp/portfolio/wp-content/themes/piyofolio/assets/img/prev-arrow.svg" alt=""></div>',//矢印部分PreviewのHTMLを変更
+		nextArrow: '<div class="slick-next slick-arrow"><img src="https://piyofolio.sakura.ne.jp/portfolio/wp-content/themes/piyofolio/assets/img/next-arrow.svg" alt=""></div>',//矢印部分NextのHTMLを変更
 		dots: true,//下部ドットナビゲーションの表示
         dotsClass: 'slick-dots',
         pauseOnFocus: false,//フォーカスで一時停止を無効
