@@ -27,7 +27,7 @@ $('.slider').slick({
 
 		prevArrow: '<div class="slick-prev slick-arrow"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/prev-arrow.svg" alt=""></div>',//矢印部分PreviewのHTMLを変更
 		nextArrow: '<div class="slick-next slick-arrow"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/next-arrow.svg" alt=""></div>',//矢印部分NextのHTMLを変更
-		dots: true,//下部ドットナビゲーションの表示
+		// dots: fales,//下部ドットナビゲーションの表示
         dotsClass: 'slick-dots',
         pauseOnFocus: false,//フォーカスで一時停止を無効
         pauseOnHover: false,//マウスホバーで一時停止を無効

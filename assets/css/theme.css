@@ -303,7 +303,7 @@ html ul {
 }
 
 .slider {
-  width: 80%;
+  width: 100%;
   /* ①スライダー全体の幅を指定 */
   margin: 0 auto;
   position: relative;
@@ -679,6 +679,7 @@ html ul {
   line-height: 200%;
   /* identical to box height, or 32px */
   letter-spacing: 0.04em;
+  margin-top: 1rem;
 }
 .HeaderPC__nav {
   display: flex;
