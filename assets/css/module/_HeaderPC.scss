@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 
 .HeaderPC {
@@ -46,7 +46,8 @@
       p {
         margin: 0 0 0 1rem;
 
-        @include c.p_L-Regular_pc;
+        @include pc.p_L-Regular_pc;
+        font-size: 1.8rem;
       }
     }
     &__logo {
@@ -62,8 +63,9 @@
     }
 
     p {
-      @include c.p_M-Regular_pc;
+      @include pc.p_M-Regular_pc;
       margin-top: 1rem;
+      font-size: 1.7rem;
     }
   }
 
@@ -78,6 +80,7 @@
   &__nav-item {
     box-sizing: border-box;
     margin-right: 2rem;
+    margin-bottom: 0.5rem;
 
     a {
       display: block;
@@ -92,7 +95,7 @@
       text-align: left;
       span {
         // ⑧ _commonPC.scss で fontを編集
-        @include c.span_NavItem_L_pc;
+        @include pc.span_NavItem_L_pc;
       }
     }
   }
@@ -106,8 +109,9 @@
       align-items: center;
       justify-content: start;
       a {
+        margin-bottom: 0.5rem;
         span {
-          @include c.span_NavItem_pc;
+          @include pc.span_NavItem_pc;
           line-height: 1rem;
         }
       }

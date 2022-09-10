@@ -1,5 +1,5 @@
 @use "../base/commonSP" as sp;
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 
 @include s.sp {
@@ -8,7 +8,7 @@
 
     .Title {
       //   ここから編集
-      border-bottom: 1px solid c.$main-color;
+      border-bottom: 1px solid pc.$main-color;
       height: min-content;
       padding-bottom: 4rem;
 

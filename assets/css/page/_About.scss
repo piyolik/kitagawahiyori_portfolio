@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 main.About {
   @include s.main-width;
@@ -18,7 +18,7 @@ main.About {
 
     &__copy {
       p {
-        @include c.p_L-Regular_pc;
+        @include pc.p_L-Regular_pc;
       }
     }
 
@@ -35,7 +35,7 @@ main.About {
       tr {
         td {
           height: min-content;
-          @include c.p_S-Regular_pc;
+          @include pc.p_S-Regular_pc;
           font-size: 1.6rem;
           &:nth-child(1) {
             width: 20%;

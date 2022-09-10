@@ -1,5 +1,5 @@
 @use "../base/commonSP" as sp;
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 @include s.sp {
   main.Work {
@@ -48,7 +48,7 @@
       }
       &__detail-wrap {
         padding: 2rem 0rem 2rem 2.7rem;
-        border-left: 1.5px solid c.$main-color;
+        border-left: 1.5px solid pc.$main-color;
         p {
           @include sp.p_S-Regular_sp;
           line-height: 250%;

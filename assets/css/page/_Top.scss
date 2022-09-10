@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 main.Top {
   @include s.main-width;
@@ -18,7 +18,7 @@ main.Top {
 
     &__copy {
       p {
-        @include c.p_L-Regular_pc;
+        @include pc.p_L-Regular_pc;
       }
     }
 
@@ -35,7 +35,7 @@ main.Top {
     &__item {
       overflow: visible;
       p {
-        @include c.p_M-Regular_pc;
+        @include pc.p_M-Regular_pc;
         margin-bottom: 5.7rem;
       }
       &__img {

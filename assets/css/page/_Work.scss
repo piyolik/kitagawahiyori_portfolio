@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 main.Work {
   @include s.main-width;
@@ -17,7 +17,7 @@ main.Work {
 
     &__title {
       h2 {
-        @include c.h2_PageTtl_pc;
+        @include pc.h2_PageTtl_pc;
       }
     }
     &__item {
@@ -29,7 +29,7 @@ main.Work {
       flex-direction: row;
       align-items: center;
       h3 {
-        @include c.h3_Heading_pc;
+        @include pc.h3_Heading_pc;
       }
     }
 
@@ -42,12 +42,12 @@ main.Work {
     }
     &__detail-wrap {
       padding: 2rem 0 4rem 4rem;
-      border-left: 1.5px solid c.$main-color;
+      border-left: 1.5px solid pc.$main-color;
       p {
-        @include c.p_S-Regular_pc;
+        @include pc.p_S-Regular_pc;
       }
       p.Work-detail__sub-heading {
-        @include c.p_M-Regular_pc;
+        @include pc.p_M-Regular_pc;
         font-family: "Shuei MaruGo L";
         font-size: 1.4rem;
         margin-bottom: 0.8rem;
@@ -61,7 +61,7 @@ main.Work {
       align-items: center;
       margin-bottom: 0.8rem;
       p {
-        @include c.p_S-Regular_pc;
+        @include pc.p_S-Regular_pc;
       }
     }
 
@@ -76,7 +76,7 @@ main.Work {
     &__font {
       padding-left: 7.8rem;
       p {
-        @include c.p_S-Regular_pc;
+        @include pc.p_S-Regular_pc;
         margin-bottom: 0.8rem;
       }
     }

@@ -661,6 +661,7 @@ html ul {
   font-style: normal;
   font-size: 1.8rem;
   line-height: 250%;
+  font-size: 1.8rem;
 }
 .HeaderPC__title__logo {
   margin-right: 2rem;
@@ -680,6 +681,7 @@ html ul {
   /* identical to box height, or 32px */
   letter-spacing: 0.04em;
   margin-top: 1rem;
+  font-size: 1.7rem;
 }
 .HeaderPC__nav {
   display: flex;
@@ -689,6 +691,7 @@ html ul {
 .HeaderPC__nav-item {
   box-sizing: border-box;
   margin-right: 2rem;
+  margin-bottom: 0.5rem;
 }
 .HeaderPC__nav-item a {
   display: block;
@@ -701,7 +704,7 @@ html ul {
   font-family: "Hiragino Kaku Gothic Pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   /* identical to box height, or 40px */
   letter-spacing: 0.04em;
 }
@@ -716,10 +719,13 @@ html ul {
   align-items: center;
   justify-content: start;
 }
+.HeaderPC__Work-nav li a {
+  margin-bottom: 0.5rem;
+}
 .HeaderPC__Work-nav li a span {
   font-family: "Shuei MaruGo L";
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1rem;
 }
 .HeaderPC__Work-nav li .bar {
@@ -827,7 +833,7 @@ html ul {
 .FooterPC__nav-item a span {
   font-family: "Shuei MaruGo L";
   font-style: normal;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 .FooterPC__nav-item__CopyRight {
   font-family: "Hiragino Kaku Gothic Pro";

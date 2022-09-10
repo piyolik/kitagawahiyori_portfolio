@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 
 // 基本触らない！！！！===========
@@ -98,11 +98,11 @@
 
       span {
         // ⑧ _commonPC.scss で fontを編集
-        @include c.span_NavItem_pc;
+        @include pc.span_NavItem_pc;
       }
     }
     &__CopyRight {
-      @include c.p_SS-Regular_pc;
+      @include pc.p_SS-Regular_pc;
     }
   }
 }

@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/setting" as s;
 main.Works {
   @include s.main-width;
@@ -22,7 +22,7 @@ main.Works {
       p {
         margin-top: 3rem;
         text-align: center;
-        @include c.p_M-Regular_pc;
+        @include pc.p_M-Regular_pc;
 
         // はみ出る場合は・・・
         overflow: hidden;

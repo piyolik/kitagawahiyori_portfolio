@@ -1,4 +1,4 @@
-@use "../base/commonPC" as c;
+@use "../base/commonPC" as pc;
 @use "../base/commonSP" as sp;
 @use "../base/setting" as s;
 
@@ -46,7 +46,7 @@
 
     &.active .humbarger {
       background-image: none;
-      border: 0.2rem solid c.$main-color;
+      border: 0.2rem solid pc.$main-color;
       border-radius: 50%;
     }
 
@@ -58,7 +58,7 @@
       font-weight: 600;
       font-size: 1rem;
       line-height: 3;
-      color: c.$main-color;
+      color: pc.$main-color;
     }
     &.active p {
       opacity: 0;
@@ -68,7 +68,7 @@
     span {
       width: 19px;
       height: 2px;
-      background: c.$main-color;
+      background: pc.$main-color;
       display: block;
       position: absolute;
       top: 2.4rem;
@@ -134,14 +134,14 @@
       }
       // ⑤ リストアイテムのデザイン設定*/
       a {
-        color: c.$main-color;
+        color: pc.$main-color;
         text-decoration: none;
         padding: 0.5rem;
         text-align: left;
         display: block;
         text-transform: uppercase;
         letter-spacing: 0.1em;
-        font-family: c.$Roboto;
+        font-family: pc.$Roboto;
         font-weight: 400;
         font-size: 1.6rem;
         span {
