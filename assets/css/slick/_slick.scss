@@ -22,7 +22,7 @@
 
 .slick-prev,
 .slick-next {
-  display: none;
+  display: none !important;
   position: absolute;
   z-index: 3;
   top: 46%;
