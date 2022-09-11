@@ -59,32 +59,32 @@
                 <ul class="HeaderPC__nav nav">
 
                     <!-- ② Nav-item を変更 ----- -->
-                    <li class="HeaderPC__nav-item"><a href="./index.html"><span>TOP</span></a></li>
-                    <li class="HeaderPC__nav-item"><a href="./about.html"><span>ABOUT</span></a></li>
-                    <li class="HeaderPC__nav-item"><a href="#"><span>WORKS</span></a>
+                    <li class="HeaderPC__nav-item"><a href="#"><span>TOP</span></a></li>
+                    <li class="HeaderPC__nav-item"><a href="#"><span>ABOUT</span></a></li>
+                    <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(14); ?>"><span>WORKS</span></a>
                         <ul class="HeaderPC__Work-nav">
                             <li>
-                                <div class="bar"></div><a href="./2-logo.html"><span>ロゴ・名刺</span></a>
+                                <div class="bar"></div><a href="#"><span>ロゴ・名刺</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="./2-flyer.html"><span>フライヤー・ポスター</span></a>
+                                <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="./2-illustration.html"><span>イラスト・パッケージ・</span></a>
+                                <div class="bar"></div><a href="#"><span>イラスト・パッケージ・</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="./2-banner.html"><span>バナー</span></a>
-                            </li>
-
-                            <li>
-                                <div class="bar"></div><a href="./2-Web.html"><span>Web</span></a>
+                                <div class="bar"></div><a href="#"><span>バナー</span></a>
                             </li>
 
                             <li>
-                                <div class="bar"></div><a href="./2-UI.html"><span>アプリUI</span></a>
+                                <div class="bar"></div><a href="#"><span>Web</span></a>
+                            </li>
+
+                            <li>
+                                <div class="bar"></div><a href="#"><span>アプリUI</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="./2-Others.html"><span>Others</span></a>
+                                <div class="bar"></div><a href="#"><span>Others</span></a>
                             </li>
                         </ul>
                     </li>
@@ -134,32 +134,32 @@
                     <ul class="SPHeader__nav nav">
 
                         <!-- ② Nav-item を変更 ----- -->
-                        <li class="SPHeader__nav-item"><a href="./index.html"><span>TOP</span></a></li>
-                        <li class="SPHeader__nav-item"><a href="./about.html"><span>ABOUT</span></a></li>
+                        <li class="SPHeader__nav-item"><a href="#"><span>TOP</span></a></li>
+                        <li class="SPHeader__nav-item"><a href="#"><span>ABOUT</span></a></li>
                         <li class="SPHeader__nav-item"><a href="#"><span>WORKS</span></a>
                             <ul class="SPHeader__Work-nav">
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-logo.html"><span>ロゴ・名刺</span></a>
+                                    <div class="bar"></div><a href="#"><span>ロゴ・名刺</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-flyer.html"><span>フライヤー・ポスター</span></a>
+                                    <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-illustration.html"><span>イラスト・パッケージ</span></a>
+                                    <div class="bar"></div><a href="#"><span>イラスト・パッケージ</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-banner.html"><span>バナー</span></a>
-                                </li>
-
-                                <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-Web.html"><span>Web</span></a>
+                                    <div class="bar"></div><a href="#"><span>バナー</span></a>
                                 </li>
 
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="./2-UI.html"><span>アプリUI</span></a>
+                                    <div class="bar"></div><a href="#"><span>Web</span></a>
+                                </li>
+
+                                <li class="SPHeader__Work-nav-item">
+                                    <div class="bar"></div><a href="#"><span>アプリUI</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="/2-Others.html"><span>Others</span></a>
+                                    <div class="bar"></div><a href="#"><span>Others</span></a>
                                 </li>
                             </ul>
                         </li>

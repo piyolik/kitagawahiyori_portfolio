@@ -1,4 +1,7 @@
-<?php get_header();?>
+
+<!--　Template Name: WORKS  -->
+<?php get_header(); ?>
+
 
     <main class="Works">
         <section class="WorksList">
@@ -68,4 +71,5 @@
 
     </main>
 
-<?php get_header();?>
+    <!-- Slickのライブラリ -->
+ <?php get_footer();?>
