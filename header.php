@@ -61,7 +61,7 @@
                     <!-- ② Nav-item を変更 ----- -->
                     <li class="HeaderPC__nav-item"><a href="#"><span>TOP</span></a></li>
                     <li class="HeaderPC__nav-item"><a href="#"><span>ABOUT</span></a></li>
-                    <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(14); ?>"><span>WORKS</span></a>
+                    <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(9); ?>"><span>WORKS</span></a>
                         <ul class="HeaderPC__Work-nav">
                             <li>
                                 <div class="bar"></div><a href="#"><span>ロゴ・名刺</span></a>
