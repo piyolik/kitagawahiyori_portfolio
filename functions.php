@@ -10,3 +10,4 @@
 
 // ② 関数「piyofolio_theme_setup()」を「after_setup_theme」のタイミングに実行させる
 add_action('after_setup_theme', 'piyofolio_theme_setup');
+?>
