@@ -2,11 +2,11 @@
 
 
 <main class="Works">
-    <?php if (is_post_type_archive('logo')) : ?>
+    <?php if (is_post_type_archive('UI')) : ?>
 
         <section class="WorksList">
             <h2>
-                ロゴ・名刺
+                アプリUI
             </h2>
 
             <!-- worklist テンプレートを読み込み -->

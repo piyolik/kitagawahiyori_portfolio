@@ -1,12 +1,13 @@
+<!-- Template Name: WORKS  -->
 <?php get_header(); ?>
 
 
 <main class="Works">
-    <?php if (is_post_type_archive('logo')) : ?>
+    <?php if (is_post_type_archive('works')) : ?>
 
         <section class="WorksList">
             <h2>
-                ロゴ・名刺
+                WORKS
             </h2>
 
             <!-- worklist テンプレートを読み込み -->

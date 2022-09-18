@@ -2,11 +2,11 @@
 
 
 <main class="Works">
-    <?php if (is_post_type_archive('logo')) : ?>
+    <?php if (is_post_type_archive('illustration')) : ?>
 
         <section class="WorksList">
             <h2>
-                ロゴ・名刺
+                イラスト・パッケージ
             </h2>
 
             <!-- worklist テンプレートを読み込み -->

@@ -67,7 +67,7 @@
                                 <div class="bar"></div><a href="<?php echo get_post_type_archive_link('logo'); ?>"><span>ロゴ・名刺</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('flyer'); ?>"><span>ポスター・フライヤー</span></a>
                             </li>
                             <li>
                                 <div class="bar"></div><a href="#"><span>イラスト・パッケージ・</span></a>
@@ -140,7 +140,7 @@
                                     <div class="bar"></div><a href="<?php echo get_post_type_archive_link('logo'); ?>"><span>ロゴ・名刺</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('flyer'); ?>"><span>ポスター・フライヤー</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
                                     <div class="bar"></div><a href="#"><span>イラスト・パッケージ</span></a>
