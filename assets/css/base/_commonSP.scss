@@ -128,6 +128,7 @@
 ---------------------------------*/
 @include s.sp {
   body {
+    height: unset;
     @include s.max-width;
 
     main {

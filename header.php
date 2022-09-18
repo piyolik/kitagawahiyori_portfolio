@@ -42,7 +42,7 @@
                     <div class="HeaderPC__title__logo">
                         <a class="" href="<?php echo esc_url(home_url()); ?>">
                             <!-- ④　ロゴのリンクと代替コードを書き換える -->
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/hiyori.GIF" alt="<?php bloginfo('name'); ?>">
+                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/hiyori-round.gif" alt="<?php bloginfo('name'); ?>">
 
                         </a>
                     </div>
@@ -64,7 +64,7 @@
                     <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(9); ?>"><span>WORKS</span></a>
                         <ul class="HeaderPC__Work-nav">
                             <li>
-                                <div class="bar"></div><a href="#"><span>ロゴ・名刺</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('logo'); ?>"><span>ロゴ・名刺</span></a>
                             </li>
                             <li>
                                 <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>
@@ -137,7 +137,7 @@
                         <li class="SPHeader__nav-item"><a href="#"><span>WORKS</span></a>
                             <ul class="SPHeader__Work-nav">
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>ロゴ・名刺</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('logo'); ?>"><span>ロゴ・名刺</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
                                     <div class="bar"></div><a href="#"><span>フライヤー・ポスター</span></a>

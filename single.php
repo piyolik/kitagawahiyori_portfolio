@@ -13,8 +13,14 @@
 
             <section class="Work-img">
                 <div class="Work-img__img">
-                    <img src="../img/1-sp-mukohan.png" alt="">
+                    <?php
+                    $imagefiled = get_field('imagefiled');
+                    if ($imagefiled) {
+                    ?>
+                        <img src="<?php echo $imagefiled ?>" />
+                    <?php } ?>
                 </div>
+
             </section>
 
 
@@ -92,7 +98,7 @@
                         <h3>デザインコンセプト</h3>
                     </div>
                     <div class="Work-detail__detail">
-                        <div class="Work-detail__detail-wrap">
+                        <div class="Work-detail__detail-wrap design-concept">
                             <?php the_field('デザインコンセプト'); ?>
                         </div>
 

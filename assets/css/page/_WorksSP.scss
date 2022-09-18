@@ -6,6 +6,11 @@
     @include s.main-width;
 
     .WorksList {
+      h2 {
+        @include sp.h2_PageTtl_sp;
+        margin: 0 auto;
+        width: 80%;
+      }
       width: 100%;
       &__list {
         display: flex;

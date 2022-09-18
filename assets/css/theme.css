@@ -66,6 +66,7 @@ body {
 
 body {
   width: 100%; /*ページ全体の幅は100%と指定する*/
+  height: min-content;
   text-align: left; /*ページ全体を中央揃えにする*/
   display: flex; /*ページ全体のレイアウト*/
   flex-direction: row-reverse;
@@ -84,6 +85,7 @@ body {
 body main {
   width: 70%;
   margin: 0 auto;
+  border-right: 0.1rem solid black;
 }
 @media (max-width: 1024px) {
   body main {
@@ -117,6 +119,7 @@ body main section {
 ---------------------------------*/
 @media (max-width: 1024px) {
   body {
+    height: unset;
     max-width: 160rem;
     width: 124rem;
     margin: 0 auto;
@@ -465,7 +468,7 @@ html ul {
   z-index: 9999;
   width: 5rem;
   height: 5rem;
-  background-image: url(../img/hiyori.GIF);
+  background-image: url(../img/hiyori-round.gif);
   background-size: 100%;
 }
 .SPHeader__openbtn.active .humbarger {
@@ -626,11 +629,10 @@ html ul {
   margin: 0 auto;
   overflow-y: scroll;
   width: 30%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   right: 0;
   z-index: 100;
-  border-left: 0.1rem solid black;
 }
 @media (max-width: 1024px) {
   .HeaderPC {
@@ -1261,6 +1263,18 @@ main.Works {
     width: 100%;
   }
 }
+main.Works .WorksList {
+  display: flex;
+  flex-direction: column;
+}
+main.Works .WorksList h2 {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-size: 2.4rem;
+  line-height: 250%;
+}
 main.Works .WorksList__list {
   display: flex;
   flex-direction: row;
@@ -1306,6 +1320,17 @@ main.Works .WorksList__item p {
 @media (max-width: 1024px) {
   main.Works .WorksList {
     width: 100%;
+  }
+  main.Works .WorksList h2 {
+    font-family: "Hiragino Kaku Gothic Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 200%;
+    /* or 26px */
+    letter-spacing: 0.04em;
+    margin: 0 auto;
+    width: 80%;
   }
   main.Works .WorksList__list {
     display: flex;
@@ -1359,8 +1384,10 @@ main.Work .Work-img__img {
 }
 main.Work .Work-detail {
   padding-top: 0;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
+  height: unset;
 }
 main.Work .Work-detail__title h2 {
   font-family: "Hiragino Kaku Gothic Pro";
@@ -1416,6 +1443,9 @@ main.Work .Work-detail__detail-wrap p.Work-detail__sub-heading {
   font-family: "Shuei MaruGo L";
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
+}
+main.Work .Work-detail__detail-wrap.design-concept {
+  padding-bottom: 10rem;
 }
 main.Work .Work-detail__color {
   padding-left: 4.8rem;

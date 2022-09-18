@@ -154,6 +154,7 @@ $Hiragino__KG--W6: "Hiragino Kaku Gothic W6 JIS2004";
 }
 body {
   width: 100%; /*ページ全体の幅は100%と指定する*/
+  height: min-content;
   text-align: left; /*ページ全体を中央揃えにする*/
 
   display: flex; /*ページ全体のレイアウト*/
@@ -165,6 +166,7 @@ body {
 
   main {
     @include s.main-width;
+    border-right: 0.1rem solid black;
 
     section {
       @include s.inner-width;

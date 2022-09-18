@@ -6,7 +6,7 @@
   width: 30%;
   // ① Header の幅を調整
 
-  height: 100vh;
+  height: 100%;
   // ① Header の高さを調整
 
   position: relative;
@@ -14,7 +14,6 @@
   z-index: 100;
   // 位置を調整
 
-  border-left: 0.1rem solid black;
   // 装飾
 
   &__Inner {

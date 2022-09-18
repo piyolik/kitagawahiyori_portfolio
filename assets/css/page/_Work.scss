@@ -12,8 +12,10 @@ main.Work {
   }
   .Work-detail {
     padding-top: 0;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
+    height: unset;
 
     &__title {
       h2 {
@@ -51,6 +53,9 @@ main.Work {
         font-family: "Shuei MaruGo L";
         font-size: 1.4rem;
         margin-bottom: 0.8rem;
+      }
+      &.design-concept {
+        padding-bottom: 10rem;
       }
     }
 

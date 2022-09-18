@@ -14,7 +14,6 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 
 
 
-
 $('.slider').slick({
 		fade:true,//切り替えをフェードで行う。初期値はfalse。
 		autoplay: true,//自動的に動き出すか。初期値はfalse。
@@ -33,3 +32,4 @@ $('.slider').slick({
         pauseOnHover: false,//マウスホバーで一時停止を無効
         pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
 });
+
