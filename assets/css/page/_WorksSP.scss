@@ -6,6 +6,8 @@
     @include s.main-width;
 
     .WorksList {
+      display: flex;
+      flex-direction: column;
       h2 {
         @include sp.h2_PageTtl_sp;
         margin: 0 auto;
