@@ -70,21 +70,21 @@
                                 <div class="bar"></div><a href="<?php echo get_post_type_archive_link('flyer'); ?>"><span>ポスター・フライヤー</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="#"><span>イラスト・パッケージ・</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('illustration'); ?>"><span>イラスト・パッケージ</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="#"><span>バナー</span></a>
-                            </li>
-
-                            <li>
-                                <div class="bar"></div><a href="#"><span>Web</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('banner'); ?>"><span>バナー</span></a>
                             </li>
 
                             <li>
-                                <div class="bar"></div><a href="#"><span>アプリUI</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('Web'); ?>"><span>Web</span></a>
+                            </li>
+
+                            <li>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('UI'); ?>"><span>アプリUI</span></a>
                             </li>
                             <li>
-                                <div class="bar"></div><a href="#"><span>Others</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('others'); ?>"><span>Others</span></a>
                             </li>
                         </ul>
                     </li>
@@ -143,21 +143,21 @@
                                     <div class="bar"></div><a href="<?php echo get_post_type_archive_link('flyer'); ?>"><span>ポスター・フライヤー</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>イラスト・パッケージ</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('illustration'); ?>"><span>イラスト・パッケージ</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>バナー</span></a>
-                                </li>
-
-                                <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>Web</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('banner'); ?>"><span>バナー</span></a>
                                 </li>
 
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>アプリUI</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('Web'); ?>"><span>Web</span></a>
+                                </li>
+
+                                <li class="SPHeader__Work-nav-item">
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('UI'); ?>"><span>アプリUI</span></a>
                                 </li>
                                 <li class="SPHeader__Work-nav-item">
-                                    <div class="bar"></div><a href="#"><span>Others</span></a>
+                                    <div class="bar"></div><a href="<?php echo get_post_type_archive_link('others'); ?>"><span>Others</span></a>
                                 </li>
                             </ul>
                         </li>
