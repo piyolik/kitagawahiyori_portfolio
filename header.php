@@ -59,8 +59,8 @@
                 <ul class="HeaderPC__nav nav">
 
                     <!-- ② Nav-item を変更 ----- -->
-                    <li class="HeaderPC__nav-item"><a href="#"><span>TOP</span></a></li>
-                    <li class="HeaderPC__nav-item"><a href="#"><span>ABOUT</span></a></li>
+                    <li class="HeaderPC__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>"><span>TOP</span></a></li>
+                    <li class="HeaderPC__nav-item"><a href="<?php echo esc_url(home_url('about')); ?>"><span>ABOUT</span></a></li>
                     <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(9); ?>"><span>WORKS</span></a>
                         <ul class="HeaderPC__Work-nav">
                             <li>
@@ -132,8 +132,8 @@
                     <ul class="SPHeader__nav nav">
 
                         <!-- ② Nav-item を変更 ----- -->
-                        <li class="SPHeader__nav-item"><a href="#"><span>TOP</span></a></li>
-                        <li class="SPHeader__nav-item"><a href="<?php $permalink = get_permalink(46); ?>"><span>ABOUT</span></a></li>
+                        <li class="SPHeader__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>"><span>TOP</span></a></li>
+                        <li class="SPHeader__nav-item"><a href="<?php echo esc_url(home_url('about')); ?>"><span>ABOUT</span></a></li>
                         <li class="SPHeader__nav-item"><a href="#"><span>WORKS</span></a>
                             <ul class="SPHeader__Work-nav">
                                 <li class="SPHeader__Work-nav-item">
