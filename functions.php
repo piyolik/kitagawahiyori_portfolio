@@ -179,5 +179,20 @@ function add_my_post_category_archive($query)
   if (!is_admin() && $query->is_main_query() && $query->is_category()) {
     $query->set('post_type', array('post', 'flyer'));
   }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'illustration'));
+  }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'banner'));
+  }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'Web'));
+  }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'UI'));
+  }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'others'));
+  }
 }
 add_action('pre_get_posts', 'add_my_post_category_archive');
