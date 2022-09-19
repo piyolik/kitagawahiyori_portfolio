@@ -1,0 +1,25 @@
+@use "../base/commonPC" as pc;
+@use "../base/commonSP" as sp;
+@use "../base/setting" as s;
+
+a:hover {
+  cursor: none;
+}
+
+#cursor {
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  background: pc.$cursor-color;
+  border-radius: 20px;
+  width: 2rem;
+  height: 2rem;
+  margin: -2rem 0 0 -2rem; /*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2; /*一番手前に来るように*/
+  pointer-events: none; /*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+
+  &.active {
+    transform: scale(2.3);
+    background: pc.$cursor-color;
+  }
+}

@@ -7,6 +7,7 @@
 $main-color: rgb(37, 37, 37);
 $text-color: rgba(0, 0, 0, 1);
 $section-color: rgba(0, 0, 0, 0);
+$cursor-color: rgba(255, 251, 0, 0.9);
 
 /*---------------------------------
   font
@@ -153,6 +154,7 @@ $Hiragino__KG--W6: "Hiragino Kaku Gothic W6 JIS2004";
   background-color: $section-color;
 }
 body {
+  cursor: none;
   width: 100%; /*ページ全体の幅は100%と指定する*/
   height: min-content;
   text-align: left; /*ページ全体を中央揃えにする*/

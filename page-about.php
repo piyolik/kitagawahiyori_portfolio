@@ -28,7 +28,7 @@
             <tr valign=" top" height="5%">
                 <!-- tｄ = 縦・列 -->
                 <td>2018.11</td>
-                <td>カナダにワーホリに行きことを決心。</td>
+                <td>カナダにワーホリに行くことを決心。</td>
                 </td>
             </tr>
             <tr valign="top" height="16%">

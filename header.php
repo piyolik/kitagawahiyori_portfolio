@@ -30,6 +30,7 @@
 <!-- ⑤　bodytタグのクラスを動的に出力する -->
 
 <body <?php body_class(); ?>>
+    <div id="cursor"></div>
 
     <?php wp_body_open(); ?>
     <!-- ⑦　bodyの開始タグ直後に記述 -->

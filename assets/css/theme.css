@@ -65,6 +65,7 @@ body {
 }
 
 body {
+  cursor: none;
   width: 100%; /*ページ全体の幅は100%と指定する*/
   height: min-content;
   text-align: left; /*ページ全体を中央揃えにする*/
@@ -697,7 +698,7 @@ html ul {
 .HeaderPC__nav-item {
   box-sizing: border-box;
   margin-right: 2rem;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.6rem;
 }
 .HeaderPC__nav-item a {
   display: block;
@@ -726,7 +727,7 @@ html ul {
   justify-content: start;
 }
 .HeaderPC__Work-nav li a {
-  margin-bottom: 0.3rem;
+  padding-bottom: 1.2rem;
 }
 .HeaderPC__Work-nav li a span {
   font-family: "Shuei MaruGo L";
@@ -960,6 +961,27 @@ html ul {
     letter-spacing: 0.04em;
   }
 }
+a:hover {
+  cursor: none;
+}
+
+#cursor {
+  position: fixed;
+  /*丸の大きさと色の指定*/
+  background: rgba(255, 251, 0, 0.9);
+  border-radius: 20px;
+  width: 2rem;
+  height: 2rem;
+  margin: -2rem 0 0 -2rem; /*真ん中にくるようにマイナスマージンで調整*/
+  z-index: 2; /*一番手前に来るように*/
+  pointer-events: none; /*クリックできなくなるのを防ぐため。noneで対応*/
+  opacity: 0;
+}
+#cursor.active {
+  transform: scale(2.3);
+  background: rgba(255, 251, 0, 0.9);
+}
+
 main.Top {
   width: 70%;
   margin: 0 auto;
@@ -1319,6 +1341,8 @@ main.Works .WorksList__item p {
 }
 @media (max-width: 1024px) {
   main.Works .WorksList {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
   main.Works .WorksList h2 {

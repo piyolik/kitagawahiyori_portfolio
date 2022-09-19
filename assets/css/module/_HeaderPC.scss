@@ -79,7 +79,7 @@
   &__nav-item {
     box-sizing: border-box;
     margin-right: 2rem;
-    margin-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
 
     a {
       display: block;
@@ -108,7 +108,7 @@
       align-items: center;
       justify-content: start;
       a {
-        margin-bottom: 0.3rem;
+        padding-bottom: 1.2rem;
         span {
           @include pc.span_NavItem_pc;
           line-height: 1rem;
