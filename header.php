@@ -133,7 +133,7 @@
 
                         <!-- ② Nav-item を変更 ----- -->
                         <li class="SPHeader__nav-item"><a href="#"><span>TOP</span></a></li>
-                        <li class="SPHeader__nav-item"><a href="#"><span>ABOUT</span></a></li>
+                        <li class="SPHeader__nav-item"><a href="<?php $permalink = get_permalink(46); ?>"><span>ABOUT</span></a></li>
                         <li class="SPHeader__nav-item"><a href="#"><span>WORKS</span></a>
                             <ul class="SPHeader__Work-nav">
                                 <li class="SPHeader__Work-nav-item">
