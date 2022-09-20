@@ -62,7 +62,7 @@
                     <!-- ② Nav-item を変更 ----- -->
                     <li class="HeaderPC__nav-item"><a href="<?php echo esc_url(home_url('/')); ?>"><span>TOP</span></a></li>
                     <li class="HeaderPC__nav-item"><a href="<?php echo esc_url(home_url('about')); ?>"><span>ABOUT</span></a></li>
-                    <li class="HeaderPC__nav-item"><a href="<?php echo get_page_link(9); ?>"><span>WORKS</span></a>
+                    <li class="HeaderPC__nav-item"><a href="#"><span>WORKS</span></a>
                         <ul class="HeaderPC__Work-nav">
                             <li>
                                 <div class="bar"></div><a href="<?php echo get_post_type_archive_link('logo'); ?>"><span>ロゴ・名刺</span></a>
