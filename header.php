@@ -29,6 +29,7 @@
 
 <!-- ⑤　bodytタグのクラスを動的に出力する -->
 
+
 <body <?php body_class(); ?>>
     <div id="cursor"></div>
 
