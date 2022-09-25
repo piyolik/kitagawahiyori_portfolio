@@ -4,6 +4,7 @@ main.Works {
   @include s.main-width;
 
   .WorksList {
+    height: unset;
     display: flex;
     flex-direction: column;
     h2 {
