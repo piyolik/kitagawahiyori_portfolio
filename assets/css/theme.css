@@ -67,7 +67,7 @@ body {
 body {
   cursor: none;
   width: 100%; /*ページ全体の幅は100%と指定する*/
-  height: 100vh;
+  height: unset;
   text-align: left; /*ページ全体を中央揃えにする*/
   display: flex; /*ページ全体のレイアウト*/
   flex-direction: row-reverse;
