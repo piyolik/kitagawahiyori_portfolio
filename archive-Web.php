@@ -2,7 +2,7 @@
 
 
 <main class="Works">
-    <?php if (is_post_type_archive('Web')) : ?>
+    <?php if (is_post_type_archive('web')) : ?>
 
         <section class="WorksList">
             <h2>
