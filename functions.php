@@ -102,7 +102,7 @@ function create_my_post_types()
     )
   );
   register_post_type(
-    'Web', //投稿タイプ名（識別子：半角英数字の小文字）
+    'web', //投稿タイプ名（識別子：半角英数字の小文字）
     array(
       'label' => 'Web',  //カスタム投稿タイプの名前（管理画面のメニューに表示される）
       'public' => true,  // 管理画面に表示しサイト上にも表示する
@@ -123,7 +123,7 @@ function create_my_post_types()
     )
   );
   register_post_type(
-    'UI', //投稿タイプ名（識別子：半角英数字の小文字）
+    'ui', //投稿タイプ名（識別子：半角英数字の小文字）
     array(
       'label' => 'アプリUI',  //カスタム投稿タイプの名前（管理画面のメニューに表示される）
       'public' => true,  // 管理画面に表示しサイト上にも表示する
@@ -186,10 +186,10 @@ function add_my_post_category_archive($query)
     $query->set('post_type', array('post', 'banner'));
   }
   if (!is_admin() && $query->is_main_query() && $query->is_category()) {
-    $query->set('post_type', array('post', 'Web'));
+    $query->set('post_type', array('post', 'web'));
   }
   if (!is_admin() && $query->is_main_query() && $query->is_category()) {
-    $query->set('post_type', array('post', 'UI'));
+    $query->set('post_type', array('post', 'ui'));
   }
   if (!is_admin() && $query->is_main_query() && $query->is_category()) {
     $query->set('post_type', array('post', 'others'));

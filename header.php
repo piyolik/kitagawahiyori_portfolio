@@ -79,11 +79,11 @@
                             </li>
 
                             <li>
-                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('Web'); ?>"><span>Web</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('web'); ?>"><span>Web</span></a>
                             </li>
 
                             <li>
-                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('UI'); ?>"><span>アプリUI</span></a>
+                                <div class="bar"></div><a href="<?php echo get_post_type_archive_link('ui'); ?>"><span>アプリUI</span></a>
                             </li>
                             <li>
                                 <div class="bar"></div><a href="<?php echo get_post_type_archive_link('others'); ?>"><span>Others</span></a>
