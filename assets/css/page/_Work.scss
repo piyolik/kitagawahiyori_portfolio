@@ -6,8 +6,21 @@ main.Work {
   .Work-img {
     padding-bottom: 0;
     height: auto;
-    &__img {
-      width: 76.6rem;
+    display: flex;
+    flex-direction: column;
+    &__movie {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%; //16:9の比率の場合
+      overflow: hidden;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .Work-detail {

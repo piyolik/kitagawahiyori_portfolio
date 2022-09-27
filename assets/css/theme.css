@@ -1403,9 +1403,22 @@ main.Work {
 main.Work .Work-img {
   padding-bottom: 0;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
-main.Work .Work-img__img {
-  width: 76.6rem;
+main.Work .Work-img__movie {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+main.Work .Work-img__movie iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 main.Work .Work-detail {
   padding-top: 0;
@@ -1525,9 +1538,26 @@ main.Work .Work-detail__font p {
   main.Work .Work-img {
     padding-bottom: 0;
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
   main.Work .Work-img__img {
-    width: 76.6rem;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+  main.Work .Work-img__movie {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  main.Work .Work-img__movie iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 1024px) {

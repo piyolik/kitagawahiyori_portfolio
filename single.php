@@ -12,20 +12,46 @@
             <!-- 画像があれば画像を表示させたい -->
 
             <section class="Work-img">
-                <div class="Work-img__img">
-                    <?php
-                    $imagefiled = get_field('imagefiled');
-                    if ($imagefiled) {
-                    ?>
+
+                <?php
+                $imagefiled = get_field('imagefiled');
+                if ($imagefiled) {
+                ?>
+                    <div class="Work-img__img">
                         <img src="<?php echo $imagefiled ?>" />
-                    <?php } ?>
-                </div>
+                    </div>
+                <?php } ?>
+
+                <?php
+                $imagefiled_2 = get_field('imagefiled_2');
+                if ($imagefiled_2) {
+                ?>
+                    <div class="Work-img__img">
+                        <img src="<?php echo $imagefiled_2 ?>" />
+                    </div>
+                <?php } ?>
+
+                <?php
+                $imagefiled_3 = get_field('imagefiled_3');
+                if ($imagefiled_3) {
+                ?>
+                    <div class="Work-img__img">
+                        <img src="<?php echo $imagefiled_3 ?>" />
+                    </div>
+                <?php } ?>
+
+                <?php if (get_field('movie_url')) : ?>
+                    <div class="Work-img__movie">
+                        <?php echo $embed_code = wp_oembed_get(get_field('movie_url')); ?>
+                    </div>
+                <?php endif; ?>
+
 
             </section>
 
 
 
-            <section class="Work-detail">
+            <section class=" Work-detail">
 
                 <!-- 作品タイトルを表示させる -->
 
