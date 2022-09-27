@@ -1406,12 +1406,17 @@ main.Work .Work-img {
   display: flex;
   flex-direction: column;
 }
+main.Work .Work-img__img {
+  margin-bottom: 5rem;
+  width: 100%;
+}
 main.Work .Work-img__movie {
   position: relative;
   width: 100%;
   height: 0;
   padding-top: 56.25%;
   overflow: hidden;
+  margin-bottom: 5rem;
 }
 main.Work .Work-img__movie iframe {
   position: absolute;
@@ -1551,6 +1556,7 @@ main.Work .Work-detail__font p {
     height: 0;
     padding-top: 56.25%;
     overflow: hidden;
+    margin-bottom: 5rem;
   }
   main.Work .Work-img__movie iframe {
     position: absolute;
