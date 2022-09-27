@@ -4,10 +4,10 @@
 @include s.sp {
   main.Work {
     @include s.main-width;
-
+    width: 100%;
     .Work-img {
       padding-bottom: 0;
-
+      width: 90%;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -37,6 +37,7 @@
       display: flex;
       flex-direction: column;
       height: min-content;
+      width: 80%;
 
       &__title {
         h2 {

@@ -2,6 +2,7 @@
 @use "../base/setting" as s;
 main.Work {
   @include s.main-width;
+  
 
   .Work-img {
     padding-bottom: 0;

@@ -1531,6 +1531,7 @@ main.Work .Work-detail__font p {
   main.Work {
     width: 70%;
     margin: 0 auto;
+    width: 100%;
   }
 }
 @media (max-width: 1024px) and (max-width: 1024px) {
@@ -1542,6 +1543,7 @@ main.Work .Work-detail__font p {
 @media (max-width: 1024px) {
   main.Work .Work-img {
     padding-bottom: 0;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1572,6 +1574,7 @@ main.Work .Work-detail__font p {
     display: flex;
     flex-direction: column;
     height: min-content;
+    width: 80%;
   }
   main.Work .Work-detail__title h2 {
     font-family: "Hiragino Kaku Gothic Pro";
