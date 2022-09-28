@@ -9,7 +9,7 @@ add_action('after_setup_theme', 'setup_my_theme');
 function my_theme_setup()
 {
   add_theme_support('post-thumbnails'); //アイキャッチ画像の有効化
-  set_post_thumbnail_size(400, 400); //デフォルトサイズの設定
+  set_post_thumbnail_size(400, 300); //デフォルトサイズの設定
   add_image_size('x-small', 60, 60);
 }
 add_action('after_setup_theme', 'my_theme_setup');

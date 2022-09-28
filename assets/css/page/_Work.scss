@@ -2,7 +2,6 @@
 @use "../base/setting" as s;
 main.Work {
   @include s.main-width;
-  
 
   .Work-img {
     padding-bottom: 0;
@@ -76,6 +75,24 @@ main.Work {
       &.design-concept {
         padding-bottom: 10rem;
       }
+    }
+    &__more {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__more-btn {
+      width: min-content;
+      white-space: nowrap;
+      font-size: 1.2rem;
+      color: black;
+      text-align: center;
+      display: block;
+      padding: 1rem 2rem 1rem;
+      background: white;
+      border-radius: 4rem;
+      margin: 10vh auto;
+      box-shadow: 0.4rem 0.4rem 1rem rgb(0 0 0 / 15%);
     }
 
     &__color {

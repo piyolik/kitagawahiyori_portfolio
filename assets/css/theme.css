@@ -982,6 +982,47 @@ a:hover {
   background: rgba(255, 251, 0, 0.9);
 }
 
+.bounce {
+  animation-name: bounceAnime;
+  animation-duration: 5s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounceAnime {
+  0%, 100% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(1.15, 0.9);
+  }
+  12% {
+    transform: scale(1);
+    transform: translateY(-3vh);
+  }
+  18% {
+    transform: translateY(3vh);
+    transform: scale(0.96, 1.04);
+  }
+  20% {
+    transform: scale(1);
+  }
+  26% {
+    transform: scale(1.15, 0.9);
+  }
+  32% {
+    transform: scale(1);
+    transform: translateY(-3vh);
+  }
+  38% {
+    transform: translateY(3vh);
+    transform: scale(0.96, 1.04);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
 main.Top {
   width: 70%;
   margin: 0 auto;
@@ -1489,6 +1530,24 @@ main.Work .Work-detail__detail-wrap p.Work-detail__sub-heading {
 }
 main.Work .Work-detail__detail-wrap.design-concept {
   padding-bottom: 10rem;
+}
+main.Work .Work-detail__more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main.Work .Work-detail__more-btn {
+  width: min-content;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  color: black;
+  text-align: center;
+  display: block;
+  padding: 1rem 2rem 1rem;
+  background: white;
+  border-radius: 4rem;
+  margin: 10vh auto;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.15);
 }
 main.Work .Work-detail__color {
   padding-left: 4.8rem;

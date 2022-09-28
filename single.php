@@ -62,74 +62,87 @@
 
 
                 <!-- 作品詳細① -->
-                <div class="Work-detail__item">
+                <?php if (get_field('デザイン課題')) : ?>
+                    <div class="Work-detail__item">
 
-                    <!-- 小見出し -->
-                    <div class="Work-detail__heading">
-                        <div class="Work-detail__icon">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_fire.svg" alt="">
+                        <!-- 小見出し -->
+                        <div class="Work-detail__heading">
+                            <div class="Work-detail__icon">
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_fire.svg" alt="">
+                            </div>
+                            <h3>デザイン課題</h3>
                         </div>
-                        <h3>デザイン課題</h3>
-                    </div>
 
-                    <!-- 詳細本文 -->
-                    <div class="Work-detail__detail">
-                        <div class="Work-detail__detail-wrap">
-                            <?php the_field('デザイン課題'); ?>
+                        <!-- 詳細本文 -->
+                        <div class="Work-detail__detail">
+                            <div class="Work-detail__detail-wrap">
+                                <?php the_field('デザイン課題'); ?>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                <?php endif; ?>
 
 
                 <!-- 作品詳細② -->
-                <div class="Work-detail__item">
+                <?php if (get_field('情報整理')) : ?>
+                    <div class="Work-detail__item">
 
-                    <!-- 小見出し -->
-                    <div class="Work-detail__heading">
-                        <div class="Work-detail__icon">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_concept.svg" alt="">
+                        <!-- 小見出し -->
+                        <div class="Work-detail__heading">
+                            <div class="Work-detail__icon">
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_concept.svg" alt="">
+                            </div>
+                            <h3>情報整理</h3>
                         </div>
-                        <h3>情報整理</h3>
-                    </div>
 
-                    <!-- 詳細本文 -->
-                    <div class="Work-detail__detail">
-                        <div class="Work-detail__detail-wrap">
-                            <?php the_field('情報整理'); ?>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="Work-detail__item">
-                    <div class="Work-detail__heading">
-                        <div class="Work-detail__icon">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_settting.svg" alt="">
-                        </div>
-                        <h3>着眼点</h3>
-                    </div>
-                    <div class="Work-detail__detail">
-                        <div class="Work-detail__detail-wrap">
-                            <?php the_field('着眼点'); ?>
+                        <!-- 詳細本文 -->
+                        <div class="Work-detail__detail">
+                            <div class="Work-detail__detail-wrap">
+                                <?php the_field('情報整理'); ?>
+                            </div>
                         </div>
 
                     </div>
-                </div>
-                <div class="Work-detail__item">
-                    <div class="Work-detail__heading">
-                        <div class="Work-detail__icon">
-                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_star.svg" alt="">
-                        </div>
-                        <h3>デザインコンセプト</h3>
-                    </div>
-                    <div class="Work-detail__detail">
-                        <div class="Work-detail__detail-wrap design-concept">
-                            <?php the_field('デザインコンセプト'); ?>
-                        </div>
+                <?php endif; ?>
 
+                <?php if (get_field('デザイン課題')) : ?>
+                    <div class="Work-detail__item">
+                        <div class="Work-detail__heading">
+                            <div class="Work-detail__icon">
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_settting.svg" alt="">
+                            </div>
+                            <h3>着眼点</h3>
+                        </div>
+                        <div class="Work-detail__detail">
+                            <div class="Work-detail__detail-wrap">
+                                <?php the_field('着眼点'); ?>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
+
+                <?php if (get_field('デザインコンセプト')) : ?>
+                    <div class="Work-detail__item">
+                        <div class="Work-detail__heading">
+                            <div class="Work-detail__icon">
+                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/icon_star.svg" alt="">
+                            </div>
+                            <h3>デザインコンセプト</h3>
+                        </div>
+                        <div class="Work-detail__detail">
+                            <div class="Work-detail__detail-wrap design-concept">
+                                <?php the_field('デザインコンセプト'); ?>
+                                <div class="Work-detail__more">
+                                    <div class="Work-detail__more-btn bounce">
+                                        <a href="<?php the_field('link'); ?>"><span>MORE</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endif; ?>
 
             </section>
 
