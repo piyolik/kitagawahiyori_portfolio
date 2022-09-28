@@ -106,7 +106,7 @@
                     </div>
                 <?php endif; ?>
 
-                <?php if (get_field('デザイン課題')) : ?>
+                <?php if (get_field('着眼点')) : ?>
                     <div class="Work-detail__item">
                         <div class="Work-detail__heading">
                             <div class="Work-detail__icon">
