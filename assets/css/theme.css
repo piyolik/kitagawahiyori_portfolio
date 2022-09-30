@@ -1036,6 +1036,7 @@ main.Top {
 main.Top .Title {
   border-bottom: 1px solid black;
   height: min-content;
+  overflow: visible;
 }
 main.Top .Title__Inner {
   width: 100%;

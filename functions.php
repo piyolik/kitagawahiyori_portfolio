@@ -164,6 +164,27 @@ function create_my_post_types()
 
     )
   );
+  register_post_type(
+    'works', //投稿タイプ名（識別子：半角英数字の小文字）
+    array(
+      'label' => 'works',  //カスタム投稿タイプの名前（管理画面のメニューに表示される）
+      'public' => true,  // 管理画面に表示しサイト上にも表示する
+      'description' => 'カスタム投稿タイプ「works」の説明文です。',  //説明文
+      'hierarchicla' => false,  //コンテンツを階層構造にするかどうか
+      'has_archive' => true,  //trueにすると投稿した記事の一覧ページを作成することができる
+      'show_in_rest' => true,  //新エディタ Gutenberg を有効化（REST API を有効化）
+      'supports' => array(  //記事編集画面に表示する項目を配列で指定することができる
+        'title',  //タイトル
+        'editor',  //本文の編集機能
+        'thumbnail',  //アイキャッチ画像（add_theme_support('post-thumbnails')が必要）
+        'excerpt',  //抜粋
+        'custom-fields', //カスタムフィールド
+        'revisions'  //リビジョンを保存
+      ),
+      'menu_position' => 5, //「投稿」の下に追加
+
+    )
+  );
 }
 //init アクションフックで登録
 add_action('init', 'create_my_post_types');
@@ -193,6 +214,9 @@ function add_my_post_category_archive($query)
   }
   if (!is_admin() && $query->is_main_query() && $query->is_category()) {
     $query->set('post_type', array('post', 'others'));
+  }
+  if (!is_admin() && $query->is_main_query() && $query->is_category()) {
+    $query->set('post_type', array('post', 'works'));
   }
 }
 add_action('pre_get_posts', 'add_my_post_category_archive');
