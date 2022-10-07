@@ -2,7 +2,7 @@
 
 
 <main class="Works">
-    <?php if (have_posts()) : ?>
+    <?php if (is_post_type_archive('works')) : ?>
 
         <section class="WorksList">
             <h2>
